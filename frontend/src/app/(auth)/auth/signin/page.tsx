@@ -63,14 +63,14 @@ export default function SignInPage() {
   }
 
   return (
-    <div className="rounded-lg border border-[#7892ad] bg-white px-[27px] py-[30px]">
+    <div className="rounded-[12px] border border-[#627d98] bg-white px-[27px] py-[30px]">
         
       <div className="text-center">
-            <h1 className="font-space-mono text-[25px] text-black font-bold tracking-[1px]">
+            <h1 className="font-space-mono text-[32px] text-[#102A43] font-bold tracking-[1px]">
               Welcome Back
             </h1>
 
-            <p className="mt-[25px] text-[14px] font-space-mono text-black">
+            <p className="mt-[25px] text-[14px] font-inter text-[#627d98]">
               Sign in to access your team
             </p>
           </div>
@@ -79,9 +79,9 @@ export default function SignInPage() {
       <button
         type="button"
         onClick={handleGoogleSignIn}
-        className="mt-4 flex w-full items-center justify-center gap-3 rounded-[8px] border border-zinc-300 bg-white px-4 py-2.5 text-sm text-black font-medium shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-700"
+        className="mt-4 flex w-full items-center justify-center gap-3 rounded-[8px] border border-[#D9E2EC] bg-white px-4 py-2.5 text-sm text-black font-medium transition-colors hover:bg-zinc-50 dark:border-[#D9E2EC]"
       >
-        <svg className="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true">
+        <svg className="h-4 w-4" viewBox="0 0 24 24" font-inter aria-hidden="true">
           <path
             d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
             fill="#4285F4"
@@ -104,7 +104,7 @@ export default function SignInPage() {
 
       <div className="mt-4 relative">
         <div className="absolute inset-0 flex items-center">
-          <span className="w-full border-t border-zinc-200 dark:border-zinc-700" />
+          <span className="w-full border-t border-[#D9E2EC] dark:border-[#D9E2EC]" />
         </div>
         <div className="relative flex justify-center text-xs">
           <span className="text-space-mono bg-white px-2 text-zinc-900">or</span>
@@ -117,9 +117,10 @@ export default function SignInPage() {
             id="email"
             type="email"
             autoComplete="email"
+            aria-label="Email"
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? 'email-error' : undefined}
-            className="text-black w-full rounded-[8px] border border-zinc-300 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-zinc-400 focus:ring-2 focus:ring-zinc-500 focus:outline-none aria-invalid:border-red-500 dark:border-zinc-700 dark:bg-white"
+            className="font-inter text-black w-full h-[44px] rounded-[8px] border border-[#D9E2EC] bg-white px-3 py-2 text-sm placeholder:text-zinc-400 focus:ring-2 focus:ring-zinc-500 focus:outline-none aria-invalid:border-red-500 dark:border-[#D9E2EC] dark:bg-white"
             placeholder="Email"
             {...register('email')}
           />
@@ -137,9 +138,10 @@ export default function SignInPage() {
             id="password"
             type="password"
             autoComplete="current-password"
+            aria-label="Password"
             aria-invalid={!!errors.password}
             aria-describedby={errors.password ? 'password-error' : undefined}
-            className="text-black w-full rounded-[8px] border border-zinc-300 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-zinc-400 focus:ring-2 focus:ring-zinc-500 focus:outline-none aria-invalid:border-red-500 dark:border-zinc-700 dark:bg-white"
+            className="font-inter text-black w-full h-[44px] rounded-[8px] border border-[#D9E2EC] bg-white px-3 py-2 text-sm placeholder:text-zinc-400 focus:ring-2 focus:ring-zinc-500 focus:outline-none aria-invalid:border-red-500 dark:border-[#D9E2EC] dark:bg-white"
             placeholder="Password"
             {...register('password')}
           />
@@ -153,7 +155,7 @@ export default function SignInPage() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="mt-4 h-[44px] w-full rounded-[8px] bg-[#102a43] text-[13px] font-semibold text-white transition-colors hover:bg-[#243B53] disabled:cursor-not-allowed disabled:opacity-50" >
+          className="mt-2 h-[44px] w-full rounded-[8px] bg-[#102a43] text-[13px] font-semibold text-white transition-colors hover:bg-[#243B53] disabled:cursor-not-allowed disabled:opacity-50" >
           {isSubmitting ? 'Signing in…' : 'Sign in'}
         </button>
         {errors.root && (

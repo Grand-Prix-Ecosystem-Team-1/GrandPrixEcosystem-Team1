@@ -1,8 +1,6 @@
 'use client'
 
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { LogOut, User } from 'lucide-react'
 import { useAuth } from '@/hooks/useAuth'
 
 export function Navbar() {
@@ -16,8 +14,8 @@ export function Navbar() {
   }
 
   return (
-    <nav className="flex h-[60px] shrink-0 items-center bg-[#F0F4F8] px-[40px]">
-      <span className="font-mono text-[20px] font-bold text-[#102A43]">
+    <nav className="flex h-[64px] shrink-0 items-center bg-[#F0F4F8] px-[40px]">
+      <span className="ml-[90px] font-mono text-[20px] font-bold text-[#102A43]">
         Capstone
       </span>
 
@@ -25,10 +23,10 @@ export function Navbar() {
         <button
           type="button"
           onClick={handleSignOut}
-          className="ml-auto flex h-8 w-8 items-center justify-center rounded-full text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-600"
+          className="mr-[90px] font-space-mono ml-auto flex h-8 w-8 items-center justify-center text-[#102A43] transition-colors hover:bg-zinc-100 hover:text-[#243b53] focus:outline-none focus:ring-2 focus:ring-[#102A43] focus:ring-offset-2 dark:hover:text-[#243b53] hover:text-underline"
           aria-label="Sign out"
         >
-          <LogOut className="h-4 w-4" />
+          Logout
         </button>
       )}
     </nav>
