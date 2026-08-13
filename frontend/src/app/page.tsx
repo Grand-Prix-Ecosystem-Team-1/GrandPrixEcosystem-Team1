@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { getServerSession } from '@/actions/auth.actions'
+import { redirect } from 'next/navigation'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -6,7 +8,13 @@ export const metadata: Metadata = {
   description: 'Welcome to the app',
 }
 
-export default function LandingPage() {
+
+export default async function LandingPage() {
+  const session = await getServerSession()
+
+  if (session) {
+    redirect('/team')
+  }
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-8 p-8">
       <div className="space-y-4 text-center">
