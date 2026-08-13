@@ -173,6 +173,7 @@ See [CLAUDE.md](CLAUDE.md) for the full harness reference.
 
 ## Documentation
 
+
 | Topic | Link |
 |-------|------|
 | **Beginner guide (start here)** | [docs/GUIDE.md](docs/GUIDE.md) |
