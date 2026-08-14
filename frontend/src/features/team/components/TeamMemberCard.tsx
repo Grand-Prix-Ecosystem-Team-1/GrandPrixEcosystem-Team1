@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { User } from 'lucide-react'
 
 export type TeamMember = {
   name?: string
@@ -14,28 +14,31 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
   }
 
   return (
-    <div className="h-[390px] w-[280px] overflow-hidden rounded-[12px] border border-[#7892ad] bg-white">
+    <div className="h-[390px] w-[280px] overflow-hidden rounded-[12px] border border-[#D9E2EC] bg-white">
       {/* Photo */}
       <div className="flex justify-center">
-          <Image
-            width={245}
-            height={170}
-            src={member.photo || '/assets/team/placeholder.png'} 
-            alt={member.name || 'Team member'}
-            className="mt-[17.5px] h-[170px] w-[245px] rounded-t-[12px] object-cover"
-          />
+        <div className="mt-[12px] flex h-[170px] w-[245px] flex-col items-center justify-center rounded-t-[12px] bg-[#F0F4F8]">
+      <User
+        className="h-[80px] w-[80px] text-[#486581]"
+        strokeWidth={1.5}
+      />
+      <span className="mt-2 font-space-mono text-sm text-[#486581] uppercase font-bold">
+        Photo Unavailable
+      </span>
+    </div>
+
       </div>
 
       {/* Information */}
-      <div className="p-5">
+      <div className="p-4">
         {/* Name */}
         <div className="mb-1">
           {member.name ? (
-            <h3 className="w-full truncate font-mono text-xl font-bold text-[#102a43]">
+            <h3 className="w-full truncate font-space-mono text-xl font-bold text-[#102a43]">
               {member.name}
             </h3>
           ) : (
-            <p className="text-sm text-red-500">
+            <p className="text-sm text-[#D64545]">
               Name Unavailable
             </p>
           )}
@@ -44,11 +47,11 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
         {/* Role */}
         <div className="mb-1">
           {member.role ? (
-            <p className="font-mono text-m font-semibold text-[#102a43]">
+            <p className="font-space-mono text-m font-semibold text-[#102a43]">
               {member.role}
             </p>
           ) : (
-            <p className="text-m text-red-500">
+            <p className="text-m text-[#D64545]">
               Role Unavailable
             </p>
           )}
@@ -56,11 +59,11 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
 
         {/* Blurb */}
         {member.blurb ? (
-          <p className="text-sm text-black">
+          <p className="line-clamp-6 text-sm text-black">
             {member.blurb}
           </p>
         ) : (
-          <p className="text-sm text-red-500">
+          <p className="text-sm text-[#D64545]">
             No Description Provided
           </p>
         )}
