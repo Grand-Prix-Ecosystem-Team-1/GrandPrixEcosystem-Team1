@@ -23,7 +23,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={handleSignOut}
-          className="mr-[90px] font-space-mono ml-auto flex h-8 w-8 items-center justify-center text-[#102A43] transition-colors hover:bg-zinc-100 hover:text-[#243b53] focus:outline-none focus:ring-2 focus:ring-[#102A43] focus:ring-offset-2 dark:hover:text-[#243b53] hover:text-underline"
+          className="mr-[90px] font-space-mono ml-auto flex h-8 w-8 items-center justify-center text-[#102A43] transition-colors hover:bg-zinc-100 hover:text-[#243b53] focus:outline-none dark:hover:text-[#243b53] hover:underline"
           aria-label="Sign out"
         >
           Logout

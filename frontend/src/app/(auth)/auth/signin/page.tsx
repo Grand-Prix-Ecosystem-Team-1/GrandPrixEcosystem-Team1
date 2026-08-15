@@ -56,7 +56,7 @@ export default function SignInPage() {
   const handleGoogleSignIn = async () => {
     try {
       await signInWithGoogle()
-      router.replace('/dashboard')
+      router.replace('/team')
     } catch {
       toast.error('Google sign-in failed. Please try again.')
     }
@@ -81,7 +81,7 @@ export default function SignInPage() {
         onClick={handleGoogleSignIn}
         className="mt-4 flex w-full items-center justify-center gap-3 rounded-[8px] border border-[#D9E2EC] bg-white px-4 py-2.5 text-sm text-black font-medium transition-colors hover:bg-zinc-50 dark:border-[#D9E2EC]"
       >
-        <svg className="h-4 w-4" viewBox="0 0 24 24" font-inter aria-hidden="true">
+        <svg className="h-4 w-4 font-inter" viewBox="0 0 24 24" aria-hidden="true">
           <path
             d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
             fill="#4285F4"
