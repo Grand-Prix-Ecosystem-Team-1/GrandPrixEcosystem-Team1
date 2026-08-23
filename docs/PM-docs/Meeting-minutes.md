@@ -14,3 +14,14 @@ https://rmiteduau.sharepoint.com/:w:/r/sites/CapstoneProgrammingProject2026-25-G
 https://rmiteduau.sharepoint.com/:w:/r/sites/CapstoneProgrammingProject2026-25-GrandPrix-EcosystemOperationsTeam1/Shared%20Documents/Meeting%20Minutes/15.08.2026Meeting_Minutes.docx?d=w5b3264ad55df419682f034dcb915a894&csf=1&web=1&e=NbXmsj
 
 
+
+### 17.08.2026 Meeting Minutes - PM and BA meeting to discuss the requirements and creating tasks for Sprint 1 is provided below ###
+https://rmiteduau.sharepoint.com/:w:/s/CapstoneProgrammingProject2026-25-GrandPrix-EcosystemOperationsTeam1/IQDtse1IFHe6Q59Z-udOPkuuASkJLEQLMOSOdItyuwcGRRk?e=ZVJs71
+
+
+### 22.08.2026 Weekly meeting minutes document (Sprint 1) provided below ###
+https://rmiteduau.sharepoint.com/:w:/s/CapstoneProgrammingProject2026-25-GrandPrix-EcosystemOperationsTeam1/IQCpdZWpluL5T77rrfxGZgpUAePaxjo8iMocSiXboIszerQ?e=vAOMbl
+
+
+
+
